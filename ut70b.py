@@ -95,7 +95,7 @@ while True:
 
     if packet1 == packet2:
         data = parse(packet1)
-        if data: print ", ".join((str(x) for x in data))
+        if data: print(", ".join((str(x) for x in data)))
         packet2 = ser.readline()
     else:
         packet2 = packet1
